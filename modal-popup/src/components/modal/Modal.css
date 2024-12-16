@@ -1,0 +1,85 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #ed99ee;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid rgb(225, 194, 229);
+  width: 80%;
+  animation-name: animateModal;
+  animation-duration: 0.5s;
+}
+
+.close-modal-icon {
+  cursor: pointer;
+  font-size: 40px;
+  float: right;
+  font-weight: bold;
+}
+
+.header {
+  padding: 4px 16px;
+  background-color: #ab51f0;
+  color: #fff;
+}
+
+.body {
+  padding: 2px 16px;
+  height: 200px;
+}
+
+.footer {
+  padding: 2px 16px;
+  background-color: #ab51f0;
+  color: #fff;
+}
+
+@keyframes animateModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.styled-button {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.styled-button:hover {
+  background-color: #5e0b9e;
+  transform: scale(1.05);
+}
+
+.styled-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(106, 13, 173, 0.5);
+}
+
+.styled-button:active {
+  background-color: #4a0080;
+  transform: scale(0.98);
+}
